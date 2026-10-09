@@ -15,6 +15,10 @@ def ping():
 def hello_name():
     return {"message": "Hello, my name is ChatGPT!"}
 
+@app.route("/test")
+def test():
+    return {}
+
 # RUN in debug mode
 if __name__ == "__main__":
     app.run(debug=True)
